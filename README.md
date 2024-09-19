@@ -1,18 +1,35 @@
-# CreemDemo
 
-To start your Phoenix server:
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+# Project Description
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+CreemDemo is a demo project that demonstrates how to use the CreemEx library to create a payment checkout session. It provides a simple web interface for users to input product details and initiate payments.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Installation
 
-## Learn more
+1. Add the CreemEx library to your project dependencies:
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```elixir
+def deps do
+  [
+    {:creem_ex, "~> 0.1.0"}
+  ]
+end
+```
+
+2. Configure your API key:
+
+```elixir
+config :creem_ex, api_key: "your_api_key_here"
+```
+
+3. Start the Phoenix server:
+
+```elixir
+mix phx.server
+```
+
+## Usage
+
+1. Open your browser and navigate to `http://localhost:4000`.
+
+
